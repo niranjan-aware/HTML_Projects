@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+}
+
+.wrapper .menu-btn{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background: #4a4a4a;
+    color: #fff;
+    height: 45px;
+    width: 45px;
+    z-index: 9999;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#btn:checked ~ .menu-btn{
+    left: 247px;
+  }
+
+.wrapper .menu-btn i{
+    position: absolute;
+    /* /* transform: ; */
+    font-size: 23px;
+    transition: all 0.3s ease; 
+  }  
+
+  .wrapper .menu-btn i.fa-times{
+    opacity: 0;
+  }
+
+  #btn:checked ~ .menu-btn i.fa-times{
+    opacity: 1;
+    transform: rotate(-180deg);
+  }
+
+  #btn:checked ~ .menu-btn i.fa-bars{
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+
+  
+
+
+.sidebar{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    line-height: 50px;
+    font-size: 24px;
+    background-color: aqua;
+    overflow: hidden;
+    left: -370px;
+}
+
+#btn:checked ~ .sidebar{
+    left: 0;
+  } 
+
+.title{
+    padding-left: 80px;
+    background-color: grey;
+    color: white;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+li{
+    padding-left: 40px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid white;
+}
+
+li:hover{
+    box-shadow: 4px 4px 10px black;
+    overflow: hidden;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+i{
+    padding-right: 10px;
+}
+
+

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter','Sans-serif';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(230, 237, 237);
+    box-shadow: 5px 5px 30px  hsla(0, 0%, 28%, 0.256);
+    border-radius: 20px;
+}
+
+.blue-part{
+    height: 140px;
+    width: 300px;
+    background-color: rgba(0, 0, 255, 0.498);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 100px;
+    padding: 1px;
+    border: 2px solid rgba(0, 0, 255, 0.498);
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#sub-heading{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row; /* Stack buttons vertically */
+    justify-content: space-around; /* Center horizontally */
+    align-items: center; 
+}
+
+ #subscribe,#message{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 255, 0.498);
+    border: 0;
+    color: white;
+    
+}
+
+#subscribe:hover,#message:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 255, 0.352);
+
+}
+
+#subscribe:active,#message:active{
+    transform: translateY(4px);
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-be;
+}
+
+#insta,#twitter,#facebook,#yt{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.response-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#like,#comment,#share{
+    height: 25px;
+    width: 25px;
+    
+}
+#like{
+    margin-left: 30px;
+}
+#share{
+    margin-right: 30px;
+}

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Sans-serif';
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228,242,254);
+}
+
+.card{
+    background-color: #121321;
+    width: 375px;
+    height: 220px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.images-sec{
+    display: flex;
+    position: relative;
+}
+
+#logo{
+    width: 60px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#heading{
+    color: white;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    font-weight: 500;
+}
+
+#chip{
+    width: 60px;   
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+p{
+    color: white;
+}
+
+.number{
+    left: 0;
+    bottom: 70px;
+}
+
+#card-num{
+    position: absolute;
+    left: 20px;
+    bottom: 90px;
+    font-size: 13px;
+}
+
+#num{
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+}
+
+#name{
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+}
+
+.val{
+    left: 0;
+    bottom: 70px;
+}
+#valid{
+    position: absolute;
+    right: 30px;
+    bottom: 55px;
+    font-size: 10px;
+}
+
+#date{
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+}

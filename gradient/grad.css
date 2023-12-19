@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    background-image: var(--gradient); /* Apply the same gradient to h1 */
+    /* background-clip: ; */
+    /* color: transparent; */
+}
+
+
+.grad {
+    background-color: greenyellow;
+    padding: 120px;
+    position: relative;
+    border-radius: 20px;
+}
+
+#btn {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    padding: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: var(--gradient);
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 1s;
+    background-size: 300%;
+    background-position: left;
+    animation: btn-animation 5s 2 infinite;
+}
+
+#btn:active {
+    transform: translate3d(10px, 10px, 10px);
+}
+
+#btn:hover,
+#btn:focus {
+    background-position: right;
+}
+
+@keyframes btn-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
